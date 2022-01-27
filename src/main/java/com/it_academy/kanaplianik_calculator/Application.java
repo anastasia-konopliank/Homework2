@@ -15,7 +15,7 @@ public class Application {
     }
 
     public void start() {
-        Sign sign = new Sign(console);
+        ScannableSign sign = new ScannableSign(console);
         do {
             sign.scan();
         } while (sign.isIncorrect());
@@ -35,13 +35,15 @@ public class Application {
             secondNumber.scan();
         } while (secondNumber.isIncorrect());
 
-
-
         if (secondNumber.isIncorrect()) {
             return;
         }
+        calculate(sign, firstNumber, secondNumber);
+    }
 
+    public void calculate(Sign sign, Number firstNumber, Number secondNumber) {
         switch (sign.getValue()) {
+
             case ("/"):
 
                 double divResult = firstNumber.getValue() / secondNumber.getValue();

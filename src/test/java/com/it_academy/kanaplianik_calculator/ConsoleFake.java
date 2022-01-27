@@ -3,7 +3,7 @@ package com.it_academy.kanaplianik_calculator;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ConsoleFake {
+public class ConsoleFake implements Console {
     public List<String> i = new ArrayList<>();
     public List<String> o = new ArrayList<>();
 

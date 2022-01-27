@@ -1,6 +1,6 @@
 package com.it_academy.kanaplianik_calculator;
 
-public class SecondNumber {
+public class SecondNumber implements Number {
     private boolean isParsingIncorrect;
     private double parseDiv2;
     private Sign sign;

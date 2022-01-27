@@ -1,6 +1,6 @@
 package com.it_academy.kanaplianik_calculator;
 
-public class FirstNumber {
+public class FirstNumber implements Number {
     private boolean isIncorrect;
     private double parseDiv1;
     private Sign sign;
